@@ -1,0 +1,16 @@
+h1{
+	font-family: helvetica;
+	font-size: 10em;
+	color: white;
+	text-align: center;
+	background: url(http://i.imgur.com/lS1vCI1.jpg);
+	background-attachment:fixed;
+	padding: 0;
+	margin: 0;
+}
+
+button{
+    display: block;
+    margin:0 auto;
+    font-size: 5em;
+}
