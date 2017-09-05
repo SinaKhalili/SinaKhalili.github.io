@@ -19,25 +19,25 @@ $(document).ready(function(){
 		offset: 0.5,
 		duration: 3000
 	}).setTween(t1)
-	.addIndicators()
+	//.addIndicators()
 	.addTo(controller);
 
 	var scene2 = new ScrollMagic.Scene({
 		offset: '3100px',
 	}).setClassToggle("#hello",'alive')
-	.addIndicators()
+	//.addIndicators()
 	.addTo(controller);
 
 	var scene3 = new ScrollMagic.Scene({
 		offset: '3800px',
 	}).setClassToggle("#im",'alive')
-	.addIndicators()
+	//.addIndicators()
 	.addTo(controller);
 	
 	var scene3 = new ScrollMagic.Scene({
 		offset: '4500px',
 	}).setClassToggle("#LETS",'alive')
-	.addIndicators()
+	//.addIndicators()
 	.addTo(controller);
 var fadeout_tween = TweenMax.to('#toDie', 0.375,{ opacity: 0 });
 
@@ -46,7 +46,7 @@ var fadeout_tween = TweenMax.to('#toDie', 0.375,{ opacity: 0 });
 	})
 	.setTween(fadeout_tween)
 	//.setClassToggle("#toDie",'die')
-	.addIndicators()
+	//.addIndicators()
 	.addTo(controller);
 	var fadein_tween = TweenMax.to('#navigation', 0.375,{ opacity: 1 });
 
@@ -58,7 +58,7 @@ var fadeout_tween = TweenMax.to('#toDie', 0.375,{ opacity: 0 });
 	.setTween(fadein_tween)
 	.setClassToggle("#toDie",'die')
 	//.setClassToggle("#navigation",'alive')
-	.addIndicators()
+	//.addIndicators()
 	.addTo(controller);
 
 
