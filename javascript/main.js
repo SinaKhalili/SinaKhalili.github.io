@@ -61,10 +61,11 @@ var fadeout_tween = TweenMax.to('#toDie', 0.375,{ opacity: 0 });
 	//.addIndicators()
 	.addTo(controller);
 
+	//Commented out, but here's my contact info if you're here
 
-	$( "#middle" ).click(function() {
-  		$("#middle").html("<h3> E-mail: khalili@sfu.ca or sinakhalili@outlook.com or sina@sinakhalili.com <br> Phone:(+1)778-927-6771 <br> Feel free to connect on linkedin by clicking the links below and on github above.  </h3>");
-	});
+	//$( "#middle" ).click(function() {
+  	//	$("#middle").html("<h3> E-mail: khalili@sfu.ca or sinakhalili@outlook.com or sina@sinakhalili.com <br> Phone:(+1)778-927-6771 <br> Feel free to connect on linkedin by clicking the links below and on github above.  </h3>");
+	//});
 
 
 
