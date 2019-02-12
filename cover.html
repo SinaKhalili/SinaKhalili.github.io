@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./coverstyle.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/css/mdb.min.css" rel="stylesheet">
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/js/mdb.min.js"></script>
+
+    <title>Cover Letter Generator YA</title>
+</head>
+<body>
+    <!--Main Navigation-->
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark default-color">
+            <a class="navbar-brand" href="#"><strong>Yet Another Cover Letter Generator</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+
+    </header>
+    <!--Main Navigation-->
+    <div class="container">
+        <h3 class="mt-4">
+            <u>What's Yet Another Cover Letter Generator?</u>
+        </h3>
+        <p class="lead">
+            YACLG is a cover letter generator that attempts to match your skills with the skills within the requirements of the job posting.
+        </p>
+
+        <br>
+        <h5>
+            <u>How to use:</u>
+        </h5>
+        <p>Simply copy-paste the job requirements (don't worry about formating) into the required field. Add your
+            information to the JSON object (NOTE skill titles in <b>lowercase</b>). For every skill try to write a few sentences about how you have that skill.
+            This will be aggregated to the main paragraph of the cover letter for skills which are both in the requirements as
+            well as your user object. The template uses &lt;company>, &lt;name>, &lt;lname>, &lt;major>, &lt;matchedskills>
+            (the list of skills which you match, comma seperated), and &lt;skillsentences> (the aggregation of the matched skill sentences).</p>
+        <blockquote class="blockquote text-center">
+            <p class="mb-0">All things can be overcome with an adequate amount of enthousaism.</p>
+            <footer class="blockquote-footer mb-3">Someone famous</footer>
+        </blockquote>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1"><h3>Paste job requirements here: </h3></label>
+                    <textarea onchange="makeCoverLetter()" class="form-control rounded-1" id="requirements" rows="15"></textarea>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea2"><h3>Edit this JSON for your own user:</h3></label>
+                    <textarea onchange="makeCoverLetter()" class="form-control rounded-1" id="user" rows="15"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">
+                        <h3>Edit this JSON for the company you're applying to: </h3>
+                    </label>
+                    <textarea onchange="makeCoverLetter()" class="form-control rounded-1" id="company" rows="15"></textarea>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea2">
+                        <h3>Edit this cover letter template (or use the default):</h3>
+                    </label>
+                    <textarea onchange="makeCoverLetter()" class="form-control rounded-1" id="cvTemplate" rows="15"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">
+                        <h2>Your hot new cover letter: </h2>
+                    </label>
+                    <textarea class="form-control rounded-1" id="newCover" rows="15"></textarea>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small default-color">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 CopyLEFT:
+            <a href="https://sinakhalili.com"> my website </a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+  </body>
+<script src="coverscript.js"></script>
+
+</html>
