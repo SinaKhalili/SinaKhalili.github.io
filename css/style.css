@@ -14,9 +14,24 @@ body{
     background: url(../media/glasses2.png) no-repeat;
     z-index: 2;
 }
+
+#spinny {
+	position: relative;
+	float: center;
+	width: 150px;
+    height: 150px;
+    background: url(../media/prop2.png) no-repeat;
+    z-index: 2;
+}
+
 #middle{
 	background: #D7C84D;
 }
+
+#middle_t{
+	background-color: #588da8;
+}
+
 #middle:hover{
 	cursor: pointer;
 }
@@ -24,7 +39,7 @@ body{
 	position:fixed;
 	left:40;
 	top:0;
-	width: 100%;
+	width: 50%;
 }
 .fix{
 	position:fixed;
@@ -35,6 +50,7 @@ body{
 	display: table;
 	position: relative;
 	margin: auto;
+	width: 20em;
 }
 
 .spacer{
@@ -110,12 +126,33 @@ body{
 	 opacity: 0;
 
 }
+#selfroast{
+	height: 7vw;
+	opacity: 0;
+}
+
 
 h1{
 	
 	font-family: sans-serif;
 	font-weight: 300px; 
-	font-size: 7vw;
+	font-size: 6vw;
 	color: #FDFDF0;
 	margin-left: 3vh;
+}
+
+.third p{
+	font-family: sans-serif;
+	font-weight: 300px; 
+	font-size: 2vw;
+	color: #FDFDF0;
+	line-height: 6vh;
+	text-align: center;	
+	vertical-align: middle;
+	z-index: 1000;
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	margin: 20px;
 }
