@@ -22,12 +22,6 @@ $(document).ready(function(){
 	//.addIndicators()
 	.addTo(controller);
 
-	var scenex = new ScrollMagic.Scene({offset: '3200px'})
-	// animate color and top border in relation to scroll position
-	.setTween("#hello", {borderTop: "30px solid white", color: "blue", scale: 0.7}) // the tween durtion can be omitted and defaults to 1
-	.addIndicators({name: "2 (duration: 300)"}) // add indicators (requires plugin)
-	.addTo(controller);
-
 	let scene2 = new ScrollMagic.Scene({
 		offset: '3100px',
 	}).setClassToggle("#hello",'alive')
