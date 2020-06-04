@@ -1,4 +1,4 @@
-# SinaKhalili.github.io
+# [sinakhalili.com](https://sinakhalili.com) 👋
 
 This is my personal website! 
 
