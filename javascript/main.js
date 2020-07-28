@@ -72,11 +72,8 @@ $(document).ready(function () {
   //});
 });
 
-function url_looper() {
-  let frames = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-  let x = 0;
-  loop();
-  setTimeout(url_looper, 50);
+function set_random_url() {
+  location.hash = get_random_url();
 }
 let clocks = ["🕑", "🕒", "🕓", "🕕", "🕖", "🕘", "🕙", "🕛"];
 let moons = ["🌑", "🌒", "🌓", "🌔", "🌝", "🌖", "🌗", "🌘"];
@@ -90,7 +87,7 @@ let hands = [
   "\u{2583}" + "👉" + "\u{1F3FD}",
 ];
 //U+257x
-function loop() {
+function get_random_url() {
   let status_line = "";
   let time = Math.floor(Date.now() / 100);
 
@@ -101,7 +98,7 @@ function loop() {
   status_line += "💻";
   status_line += typing[time % typing.length];
 
-  location.hash = status_line;
+  return status_line;
 }
 
-url_looper();
+set_random_url();
