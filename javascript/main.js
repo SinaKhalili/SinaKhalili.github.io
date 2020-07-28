@@ -53,23 +53,15 @@ $(document).ready(function () {
     .addTo(controller);
 
   let t2 = new TimelineLite();
-  t2.to("body", 1, { backgroundColor: "#e5eaf5" });
   t2.to("#navigation", 0.375, { opacity: 1 });
+  t2.to("body", 0.375, { backgroundColor: "#e5eaf5" });
 
   let scene6 = new ScrollMagic.Scene({
     offset: "5900px",
   })
     .setTween(t2)
     .setClassToggle("#toDie", "die")
-    //.setClassToggle("#navigation",'alive')
-    //.addIndicators()
     .addTo(controller);
-
-  //Commented out, but here's my contact info if you're here
-
-  //$( "#middle" ).click(function() {
-  //	$("#middle").html("<h3> E-mail: khalili@sfu.ca or sinakhalili@outlook.com or sina@sinakhalili.com  Feel free to connect on linkedin by clicking the links below and on github above.  </h3>");
-  //});
 });
 
 function set_random_url() {
@@ -86,7 +78,7 @@ let hands = [
   "\u{2583}" + "👉" + "\u{1F3FD}",
   "\u{2583}" + "👉" + "\u{1F3FD}",
 ];
-//U+257x
+
 function get_random_url() {
   let status_line = "";
   let time = Math.floor(Date.now() / 100);
