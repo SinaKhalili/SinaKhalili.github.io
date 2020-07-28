@@ -1,67 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Sina Khalili</title>
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<!--CDN link for  TweenMax-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sina Khalili</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--CDN link for  TweenMax-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
 
-	<script src="javascript/main.js"></script>
+    <script src="javascript/main.js"></script>
 
-	<script src= "javascript/ScrollMagic.min.js"></script>
+    <script src="javascript/ScrollMagic.min.js"></script>
 
-	<script src= "javascript/plugins/animation.gsap.min.js"></script>
+    <script src="javascript/plugins/animation.gsap.min.js"></script>
 
-	<script src= "javascript/plugins/debug.addIndicators.min.js"></script>
+    <script src="javascript/plugins/debug.addIndicators.min.js"></script>
 
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav-marquee.css" />
+  </head>
 
-</head>
- 
-<body>
-<div id="toDie">
-<div class="trigger"></div>
-	<div class="wrapper">
-	 <div class="text">
-	 <h1>
-	 	<span id="hello" class="dead "> HELLO.<br></span>
-	 	<span id="im" class="dead "> I'M SINA.<br></span>
-		<span id="LETS" class="dead "> LET'S MAKE SOMETHING COOL HAPPEN.<br></span>
-	 </h1>
-	</div>
-	</div>
+  <body>
+    <div id="toDie">
+      <div class="trigger"></div>
+      <div class="wrapper">
+        <div class="text">
+          <h1>
+            <span id="hello" class="dead"> HELLO.<br /></span>
+            <span id="im" class="dead"> I'M SINA.<br /></span>
+            <span id="LETS" class="dead">
+              LET'S MAKE SOMETHING COOL HAPPEN.<br
+            /></span>
+          </h1>
+        </div>
+      </div>
 
-	 <div class="fix">
+      <div class="fix">
+        <center><div id="logo"></div></center>
+        <img src="media/facebigger.png" id="sina" />
+      </div>
 
-	  <center>   <div id="logo"></div> </center>
-	 	<img src="media/facebigger.png" id="sina"> 
+      <div class="spacer"></div>
+    </div>
 
-	 </div>
-
-<div class="spacer"></div>
-</div>
-
-<div id="navigation">
-<a href="https://github.com/sinakhalili" target="_blank">
-	<div class="third">
-	<!-- <img src="media/facebigger.png">  -->
-	<h2> G I T H U B </h2>
-	</div>
-</a>
-<a href="resume.pdf" target="_blank">
-	<div class="third" id = "middle"> 
-	<h2> R E S U M E </h2>
-	<!-- <img src="media/facebigger.png">  -->
-	</div>
-	</a>
-<a href="https://linkedin.com/in/sinakhalili" target="_blank">
-	<div class="third">
-	<!-- <img src="media/facebigger.png"> -->
-	 <h2> L I N K E D I N </h2>
-	</div>
-</a>
-</div>
-</body>
+    <div id="navigation">
+      <nav class="menu">
+        <div class="menu__item">
+          <a class="menu__item-link" href="https://blog.sinakhalili.com"
+            >Blog</a
+          >
+          <img
+            class="menu__item-img"
+            src="media/thinking.jpg"
+            alt="Some image"
+          />
+          <div class="marquee">
+            <div class="marquee__inner" aria-hidden="true">
+              <span>thoughts</span>
+              <span>thoughts</span>
+              <span>thoughts</span>
+              <span>thoughts</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu__item">
+          <a class="menu__item-link">Projects</a>
+          <img class="menu__item-img" src="media/zoom.gif" alt="Some image" />
+          <div class="marquee">
+            <div class="marquee__inner" aria-hidden="true">
+              <span>I made things</span>
+              <span>I made things</span>
+              <span>I made things</span>
+              <span>I made things</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu__item">
+          <a class="menu__item-link" href="https://github.com/sinakhalili"
+            >Github</a
+          >
+          <img
+            class="menu__item-img"
+            src="https://avatars0.githubusercontent.com/u/20732540?s=96&v=4"
+            alt="Some image"
+          />
+          <div class="marquee">
+            <div class="marquee__inner" aria-hidden="true">
+              <span>forks & stars &</span>
+              <span>forks & stars &</span>
+              <span>forks & stars &</span>
+              <span>forks & stars &</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </body>
 </html>
