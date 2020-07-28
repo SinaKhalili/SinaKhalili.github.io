@@ -1,158 +1,149 @@
-*{
-	margin:0;
-	padding:0;
-}
-body{
-    background-color:#000;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 #logo {
-	position: relative;
-    float: center;
-	width: 97px;
-    height: 40px;
-    background: url(../media/glasses2.png) no-repeat;
-    z-index: 2;
+  position: relative;
+  float: center;
+  width: 97px;
+  height: 40px;
+  background: url(../media/glasses2.png) no-repeat;
+  z-index: 2;
 }
 
 #spinny {
-	position: relative;
-	float: center;
-	width: 150px;
-    height: 150px;
-    background: url(../media/prop2.png) no-repeat;
-    z-index: 2;
+  position: relative;
+  float: center;
+  width: 150px;
+  height: 150px;
+  background: url(../media/prop2.png) no-repeat;
+  z-index: 2;
 }
 
-#middle{
-	background: #D7C84D;
+#middle {
+  background: #d7c84d;
 }
 
-#middle_t{
-	background-color: #588da8;
+#middle_t {
+  background-color: #588da8;
 }
 
-#middle:hover{
-	cursor: pointer;
+#middle:hover {
+  cursor: pointer;
 }
-.wrapper{
-	position:fixed;
-	left:40;
-	top:0;
-	width: 50%;
+.wrapper {
+  position: fixed;
+  left: 40;
+  top: 0;
+  width: 50%;
 }
-.fix{
-	position:fixed;
-	bottom:0px;
-	width: 100%;
+.fix {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
 }
-.fix img{
-	display: table;
-	position: relative;
-	margin: auto;
-	width: 20em;
-}
-
-.spacer{
-	margin-bottom: 6000px;
-}
-.alive{
-	opacity: 1 !important;
-
-}
-.dead{
-	opacity: 0;
-}
-.die{
-	opacity: 0;
-	visibility: hidden;
-}
-.text{
-	position: absolute;
-	left: 0; 
-	top: 0;
-}
-.third{
-	height: 33%;
-	margin: 0;
-	padding: 0;
-	max-width: 100%;
-
-	overflow: hidden;
+.fix img {
+  display: table;
+  position: relative;
+  margin: auto;
+  width: 20em;
 }
 
-.third h2{
-	font-family: sans-serif;
-	font-weight: 300px; 
-	font-size: 7vw;
-	color: #FDFDF0;
-	line-height: 33vh;
-	text-align: center;	
-	vertical-align: middle;
-	z-index: 1000;
-	max-width: 100%;
-	-moz-transition: all 0.3s;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
+.spacer {
+  margin-bottom: 6000px;
+}
+.alive {
+  opacity: 1 !important;
+}
+.dead {
+  opacity: 0;
+}
+.die {
+  opacity: 0;
+  visibility: hidden;
+}
+.text {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.third {
+  height: 33%;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+
+  overflow: hidden;
 }
 
-.third h3{
-	font-family: sans-serif;
-	font-weight: 300px; 
-	font-size: 2vw;
-	color: #FDFDF0;
-	line-height: 11vh;
-	text-align: center;	
-	vertical-align: middle;
-	z-index: 1000;
-	max-width: 100%;
-	-moz-transition: all 0.3s;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
+.third h2 {
+  font-family: sans-serif;
+  font-weight: 300px;
+  font-size: 7vw;
+  color: #fdfdf0;
+  line-height: 33vh;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 1000;
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
+.third h3 {
+  font-family: sans-serif;
+  font-weight: 300px;
+  font-size: 2vw;
+  color: #fdfdf0;
+  line-height: 11vh;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 1000;
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
 
-.third:hover h2{
+.third:hover h2 {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 #navigation a:link {
-    text-decoration: none;
-
+  text-decoration: none;
 }
-#navigation{
-	 height: 100vh;
-	 opacity: 0;
-
+#navigation {
+  height: 100vh;
+  opacity: 0;
 }
-#selfroast{
-	height: 7vw;
-	opacity: 0;
+#selfroast {
+  height: 7vw;
+  opacity: 0;
 }
 
-
-h1{
-	
-	font-family: sans-serif;
-	font-weight: 300px; 
-	font-size: 6vw;
-	color: #FDFDF0;
-	margin-left: 3vh;
+h1 {
+  font-family: sans-serif;
+  font-weight: 300px;
+  font-size: 6vw;
+  color: #fdfdf0;
+  margin-left: 3vh;
 }
 
-.third p{
-	font-family: sans-serif;
-	font-weight: 300px; 
-	font-size: 2vw;
-	color: #FDFDF0;
-	line-height: 6vh;
-	text-align: center;	
-	vertical-align: middle;
-	z-index: 1000;
-	max-width: 100%;
-	-moz-transition: all 0.3s;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-	margin: 20px;
+.third p {
+  font-family: sans-serif;
+  font-weight: 300px;
+  font-size: 2vw;
+  color: #fdfdf0;
+  line-height: 6vh;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 1000;
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 20px;
 }

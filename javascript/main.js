@@ -51,12 +51,15 @@ $(document).ready(function () {
     //.setClassToggle("#toDie",'die')
     //.addIndicators()
     .addTo(controller);
-  let fadein_tween = TweenMax.to("#navigation", 0.375, { opacity: 1 });
+
+  let t2 = new TimelineLite();
+  t2.to("body", 1, { backgroundColor: "#e5eaf5" });
+  t2.to("#navigation", 0.375, { opacity: 1 });
 
   let scene6 = new ScrollMagic.Scene({
-    offset: "5999px",
+    offset: "5900px",
   })
-    .setTween(fadein_tween)
+    .setTween(t2)
     .setClassToggle("#toDie", "die")
     //.setClassToggle("#navigation",'alive')
     //.addIndicators()
