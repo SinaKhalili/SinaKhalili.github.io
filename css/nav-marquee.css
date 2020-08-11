@@ -120,7 +120,7 @@ a:focus {
   -ms-user-select: none;
   user-select: none;
   padding: 10vh 0 25vh;
-  --marquee-width: 100vw;
+  --marquee-width: 98vw;
   --offset: 20vw;
   --move-initial: calc(-25% + var(--offset));
   --move-final: calc(-50% + var(--offset));
