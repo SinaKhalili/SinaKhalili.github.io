@@ -10,8 +10,9 @@
 
 body {
   margin: 0;
-  --color-text: #111;
   --color-bg: #111;
+  --color-text: #111;
+  overflow-x: hidden;
   --color-link: #b19e7f;
   --color-link-hover: #000;
   color: var(--color-text);
